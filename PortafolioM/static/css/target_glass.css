@@ -1,0 +1,24 @@
+.glass {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.43);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: calc(100% - 40px); /* Ancho del contenedor menos el espaciado interior */
+    max-width: 100%; /* Máximo ancho para evitar que el contenido se extienda demasiado */
+    margin: 0 auto; /* Centra el elemento horizontalmente */
+    padding: 20px; /* Espaciado interior */
+    text-align: center; /* Alineación del texto a centro */
+}
+
+.glass:hover {
+    transform: scale(1.1); /* Escalado al hacer hover */
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al hacer hover */
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 576px) {
+    .glass {
+        width: calc(100% - 20px); /* Ancho del contenedor menos el espaciado interior */
+    }
+}

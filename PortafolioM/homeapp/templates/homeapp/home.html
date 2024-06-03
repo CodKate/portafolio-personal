@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<div class="container mt-5 d-flex justify-content-center">
+    <div class="row w-100 justify-content-center">
+        <!-- Tarjeta con una columna y tres filas -->
+        <div class="col-12 col-md-10 col-lg-8" style="max-width: 80%;">
+            <div class="glass mb-4 p-4">
+                <!-- Primera fila -->
+                <div class="row mb-3">
+                    <div class="col-12 col-md-4 d-flex justify-content-center align-items-center">
+                        <img src="{% static 'img/perfil.png' %}" alt="Imagen" class="img-fluid rounded shadow-lg" style="max-width: 50%;">
+                    </div>
+                    <div class="col-12 col-md-8 d-flex align-items-center">
+                        <!-- Texto descriptivo -->
+                        <div class="text-start mt-3">
+                            <p><strong>Soy alguien que aprendió el valor del esfuerzo y la perseverancia para alcanzar sus metas.</strong></p>
+                            <p><em>Una FullStack Traineer resiliente que encuentra satisfacción en cada logro alcanzado.</em></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Segunda fila -->
+                <div class="row mb-3">
+                    <div class="col-12 text-center">
+                        <h1 class="display-1">¡Hola, mundo!</h1> <!-- Texto en español -->
+                        <h1 class="display-1">Hello, World!</h1> <!-- Texto en inglés -->
+                        <h2 class="display-4">¡Mi nombre es</h2> <!-- Texto en español -->
+                        <h2 class="display-4">My name is</h2> <!-- Texto en inglés -->
+                        <a href="https://git.io/typing-svg">
+                            <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=40&duration=10000&pause=1000&color=DF1800&random=false&width=435&lines=Marjorie+Ramirez" alt="Typing SVG" class="img-fluid" />
+                        </a>
+                    </div>
+                </div>
+                <!-- Tercera fila -->
+                <div class="row">
+                    <div class="col-12">
+                        <h3>Hard Skills</h3>
+                        <p>Python - SQL - Git - CSS - HTML</p>
+                        <p>JQuery - Bootstrap - VS Code - GitHub</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
